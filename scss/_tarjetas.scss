@@ -1,0 +1,128 @@
+/* ESTILOS SECCION TARJETAS */
+
+.tarjetas {
+    padding: 1rem;
+    background-color: #f3f3f3;
+}
+
+.tar {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-color: #f3f3f3;
+
+
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .7s;
+    }
+
+    .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px black;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 2rem;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: aliceblue;
+            background: rgba(0, 0, 0, .6);
+            text-align: center;
+        }
+
+        &hover  {
+                transform: perspective(600px) rotateY(180deg);
+            }
+    }
+
+    .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: #c9c9c9;
+        padding: 15px;
+        color: #090909;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px black;
+
+        link {
+            border-top: solid 1px #f3f3f3;
+            height: 100px;
+            line-height: 50px;
+
+            a {
+                color: #f3f3f3;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            letter-spacing: 1px;
+        }
+
+    }
+
+}
+
+.tar:hover .front {
+            transform: perspective(600px) rotateY(180deg);
+        }
+        
+.tar:hover .back {
+            transform: perspective(600px) rotateY(360deg);
+        }
+    
+
+
+//  responsive 
+
+@media screen and (max-width: 992px){ 
+    .tar {
+     width: 100%;
+    height: 250px;
+    }
+
+    .gap {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .tar {
+     width: 100%;
+    height: 250px;
+    }
+    .gap {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 426px){ 
+    .tar {
+     width: 100%;
+    height: 200px;
+    }
+    .gap {
+        gap: 1rem;
+    }
+}

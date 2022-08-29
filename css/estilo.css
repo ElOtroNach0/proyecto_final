@@ -1,0 +1,226 @@
+body { 
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+main {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ESTILOS NAV-BAR */
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.ciclista {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 10px;
+    box-shadow: -1px -6px 5px -4px rgba(0,0,0,0.41);
+    -webkit-box-shadow: -1px -6px 5px -4px rgba(0,0,0,0.41);
+    -moz-box-shadow: -1px -6px 5px -4px rgba(0,0,0,0.41); 
+}
+
+.ciclista .conteiner-ciclista {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+.conteiner-ciclista .ciclista-img {
+    width: 45%;
+    height: 100%;
+
+}
+.conteiner-ciclista .ciclista-img img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ciclismo-texto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.ciclismo-texto h2 {
+    font-size: 30px;
+
+}
+.ciclismo-texto p {
+    text-align: right;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.ciclismo-texto a {
+    border: #fff solid 1px;
+    padding: 10px;
+    color: #fff;
+}
+
+.ciclismo-texto a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* SECCION CONTACTO */
+
+
+/* seccion taller*/
+
+.taller {
+    padding: 5rem 0 2rem 0;
+    justify-content: center;
+}
+
+.col-16 {
+    text-align: left;
+}
+
+.col-16 h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.accordion {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.padd {
+    margin-bottom: 2rem;
+}
+
+.accordion > p {
+    text-align: center;
+}
+
+.img-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* CLASES RESPONSIVE */
+/* INDEX */
+
+@media screen and (max-width: 970px) {
+    .navbar-b h1 {    
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .navbar-b ul {
+        grid-column: 2/9;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 780px) {
+    .ebikes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 8px;
+        gap: 10px;
+    }
+    
+    .ebikes img  {
+        width: 100%;
+        object-fit: fill;
+        box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.32);
+        -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.32);
+        -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.32);
+    }
+    
+    .img1 {
+        grid-row: 1/3;
+        grid-column: 1;
+    }
+
+    .img3 {
+        grid-row: 2/3;
+    }
+    
+    .img6 {
+        grid-column-start: span 2;
+    }
+
+    .ciclista-img {
+        display:  none;
+    }
+   
+    .ciclismo-texto {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-image: url(../img/tarjetas/WhatsApp\ Image\ 2022-07-12\ at\ 3.03.03\ PM.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    background-position: center;
+    }
+    .ciclismo-texto h2 {
+        font-size: 30px;
+        align-self: center;
+        margin: 1rem;
+    
+    }
+    .ciclismo-texto p {
+        display: none;
+    }
+
+
+
+    }
+
+@media screen and (max-width: 485px) {
+   .navbar-b  {    
+            padding-right: 0;
+        }
+        .navbar-b ul li a {
+            font-size: 1rem;
+        }
+        
+        .navbar-b h1 {    
+            font-size: 1.6rem;
+            padding: 10px;
+        }
+    
+        .navbar-b ul {
+            grid-column: 9;
+        }
+
+    }

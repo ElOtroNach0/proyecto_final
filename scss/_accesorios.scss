@@ -1,0 +1,48 @@
+.accesorios {
+    padding-top: 8rem;
+
+    padding-left: 50px;
+}
+
+.card {
+    width: 13rem;
+    height: 20rem;
+    position: revert !important;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.card-title {
+    margin-bottom: 1.3rem;
+}
+
+.card:hover {
+    background-color: white;
+    box-shadow: 6px 5px 16px -4px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 6px 5px 16px -4px rgba(0,0,0,0.45);
+    -moz-box-shadow: 6px 5px 16px -4px rgba(0,0,0,0.45);
+}
+
+.card-body {
+
+    background-color: rgb(234, 232, 230);
+
+a {
+    border: rgb(0, 0, 0) solid 1px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+    a:hover {
+        background-color: #fff;
+        color: black;
+    }
+}

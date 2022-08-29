@@ -1,0 +1,39 @@
+footer {    
+    color: white;
+    background-color: #332c2c;
+    padding-top: 2rem;
+
+    a:hover {
+        color: #4e4d4d;
+    }
+}
+
+.redes-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+
+    img {
+        width: 26px;
+        height: 36px;
+        object-fit: contain;
+        align-items: center;
+    }
+}
+
+.creado-por {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+
+    p {
+        font-weight: 200;
+    }
+
+}
+
+

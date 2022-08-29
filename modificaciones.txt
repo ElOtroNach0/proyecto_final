@@ -1,0 +1,5 @@
+- Se agregaron los titulos a las distintas web.
+- Se agrego las etiquetas meta en el header. Keywords y description.
+- Se agregaro el favicon.
+
+

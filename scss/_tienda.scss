@@ -1,0 +1,140 @@
+// /* SECCION TIENDA */
+
+.fondo {
+    background-color: #f8f8f8;
+}
+
+.tienda {
+   padding-top: 5rem;
+   background-color: #e7e9eb;
+   width: 100%;
+
+   p {
+    margin: 0;
+    padding: 0px 14px;
+   }
+
+   h3 {
+    padding: 10px;
+   }
+}
+
+.trio {
+    background-color: #f8f8f8;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .texto-precio {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+        margin-top: 10px;
+    }
+
+}
+
+
+.contenedor-img {
+        text-align: center;
+}
+.container-fluid {
+   padding-top: 3rem ;
+}
+
+.contenedor-titulo {
+    h1 {
+        span {
+            font-size: 2rem;
+            font-style: oblique;
+        }
+    }
+    
+    p {
+        padding: 1rem ;
+    }
+}
+
+.acordeon {
+    margin: 0;
+    padding: 0 !important;
+
+    .accordion {
+        padding-top: 0.6rem;
+        padding-bottom: 0;
+}
+}
+
+.texto-precio {
+    text-align: center;
+    font-size: 1.70rem;
+    padding: .5rem;
+    margin-top: 10px;
+    background-color: #4243446d;
+}
+
+
+// // USO DE LA FUNCION @EXTEND
+
+// // Viene del sass.scss
+.btn-web {
+    @extend %btn-general;
+    }
+
+
+// responsive   
+
+@media screen and (min-width: 377px) {
+    .acordeon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-titulo {
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .contenedor-titulo {
+        padding: 10px 0 0 0  ;
+        h1 {
+            font-size: 2.3rem;
+            span {
+                font-size: 1.3rem;
+                font-style: oblique;
+            }
+        }
+        
+        p {
+            font-size: 14px;
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+
+.espi {
+    display: none;
+
+}
+
+.texto-precio {
+   font-size: 1.4rem;
+}
+
+}
+
+
+
